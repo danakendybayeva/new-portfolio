@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #e5eff5;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  width: 800px;
+}
+
+.join h1 {
+  color: #2ab2af;
+  font-size: 34px;
+}
+
+.join h2 {
+  color: #c0df34;
+}
+
+.join p {
+  color: #b2b1b8;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.row > section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.sub {
+  background-color: #2ab2af;
+  color: white;
+}
+
+.sub__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a4dbda;
+}
+
+.sub__price {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 10px;
+  color: white;
+}
+
+.sub p {
+  opacity: 0.8;
+}
+
+.sub button {
+  background-color: #c0df34;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+}
+
+.why {
+  background-color: #4bbebb;
+  color: white;
+}
+
+.why ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0.7;
+  line-height: 26px;
+}
+
+section {
+  padding: 35px;
+}
+
+.port {
+  background-color: #4bbebb;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.port img, .port h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px 0;
+}
+
+.port img {
+  margin: auto 30px;
+}
+
+.port h1 {
+  text-align: center;
+  color: white;
+}
+
+.port a {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

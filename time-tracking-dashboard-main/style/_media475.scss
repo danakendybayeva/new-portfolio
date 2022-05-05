@@ -1,0 +1,156 @@
+@import "colors";
+
+.container {
+    width: 88%;
+    margin: 2rem auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 2.2rem;
+  }
+  
+  .menu-card {
+    background: $dark-blue;
+    border-radius: 1.6rem;
+    width: 100%;
+  
+    .card-report {
+      background-color: $blue;
+      border-radius: 1.6rem;
+      padding: 2rem;
+      padding-right: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+  
+      img {
+        width: 26%;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+  
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+  
+        p {
+          color: $pale-blue;
+          font-size: 1rem;
+          margin: 0;
+        }
+  
+        .name {
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+      }
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      padding: 1rem;
+      cursor: default;
+  
+      &__link {
+        color: $desaturated-blue;
+      }
+  
+      &__active {
+        color: white;
+      }
+    }
+  }
+
+  .reg-card {
+    border-radius: 1.6rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 92% -20px;
+  
+    .card {
+      background-color: $dark-blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      border-radius: 1.6rem;
+      padding: 0.5rem 1.5rem;
+  
+      &__first {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: -30px;
+  
+        h2{
+          font-size: 18px;
+          font-weight: 400;
+        }
+  
+        img {
+          width: 30px;
+          height: auto;
+        }
+      }
+    
+      &__second {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: -10px;
+  
+
+        h1 {
+          color: white;
+          font-weight: 300;
+        }
+  
+        p {
+          color: $pale-blue;
+        }
+      }
+    }
+}
+  .work {
+    background-color: $work;
+    background-image: url(../images/icon-work.svg);
+  }
+  
+  .play {
+    background-color: $play;
+    background-image: url(../images/icon-play.svg);
+  }
+  
+  .study {
+    background-color: $study;
+    background-image: url(../images/icon-study.svg);
+  }
+  
+  .exercise {
+    background-color: $exercise;
+    background-image: url(../images/icon-exercise.svg);
+    background-position: 92% -8px;
+  }
+  
+  .social {
+    background-color: $social;
+    background-image: url(../images/icon-social.svg);
+  }
+  
+  .selfcare {
+    background-color: $selfcare;
+    background-image: url(../images/icon-self-care.svg);
+  }

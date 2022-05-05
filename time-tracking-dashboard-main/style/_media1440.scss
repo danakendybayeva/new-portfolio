@@ -1,0 +1,50 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    // width: 100%;
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+
+  .menu-card {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+
+    .card-report {
+      flex-direction: column;
+      align-items: flex-start;
+      // gap: 0.5rem;
+
+      .text {
+        .name {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__link {
+        margin: 10px;
+        padding: 10px;
+      }
+    }
+  }
+
+  .card {
+    &__second {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h1 {
+        font-size: 3rem;
+        margin: 0;
+        margin-top: 1rem;
+      }
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}

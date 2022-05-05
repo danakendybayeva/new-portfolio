@@ -1,0 +1,314 @@
+@import 'colors';
+@import 'media';
+
+* {
+    box-sizing: border-box;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    line-height: 1.5;
+}
+
+p {
+    color: $gray-blue;
+}
+
+.port{
+    background-color: none;
+  
+    img, h1 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 30px 0;
+    }
+  
+    img {
+        margin-right: 30px;
+        margin-left: -30px;
+    }
+  
+    h1 {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/clipboard-landing-page-dana/images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+
+    .box{
+        width: 38%;
+        text-align: center;
+    }
+}
+
+button {
+    font-size: 1rem;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    outline: none;
+    box-shadow: 5px 10px 18px #b4b3b3;
+    font-weight: bold;
+}
+
+.ios {
+    background-color: $cyan;
+}
+
+.mac {
+    background-color: $light-blue;
+}
+
+.one{ 
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+
+    img {
+        height: 100%;
+        width: 80%;
+    }
+
+    &--right div {
+        margin-top: 40px;
+        width: 65%;
+        text-align: left;
+    }
+}
+
+.two{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+        height: 100%;
+        width: 80%;
+        margin: auto;
+    }
+
+    div:first-child {
+        padding: 40px 0;
+        width: 65%;
+        margin: auto;
+    }
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 30px;
+
+    &--col{
+        margin: 20px;
+        width: 20%;
+    }
+}
+
+.companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin: 80px 30px;
+}
+
+.three {
+    text-align: center;
+    width: 46%;
+    margin: 80px auto;
+}
+
+footer {
+
+    padding: 10px 40px;
+    background-color: #f5f6f8;
+    margin: 10px 0;
+    margin-top: 40px;
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin: 0 70px;
+    }
+
+    .end {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            max-width: 400px;
+            text-align: left;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .socials img{
+            margin: 15px;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: $dark-blue;
+    }
+    p a {
+        color: $cyan;
+    }
+}
+
+@include mobile{
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    
+    .port{      
+        i {
+          margin: 10px 20px;
+        }
+    }
+    
+    header {
+        background-image: url(/clipboard-landing-page-dana/images/bg-header-mobile.png);
+    
+        .box{
+            width: 70%;
+        }
+
+        img {
+            margin: 20px auto 30px;
+        }
+    }
+    
+    button {
+        width: 90%;
+    }
+    
+    .one{ 
+        width: 80%;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            height: auto;
+        }
+
+        &--right div {
+            width: 76%;
+            margin: 60px 12%  auto;
+            text-align: center;
+        }
+    }
+    
+    .two{
+        div{
+            padding: 40px 0;
+            width: 70%;
+            margin: auto;
+        }
+    }
+    
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 30px;
+    
+        &--col{
+            margin: 20px;
+            width: 70%;
+        }
+    }
+    
+    .companies {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 100px;
+        margin: 80px 30px;
+
+        div {
+            margin: 30px 0;
+        }
+    }
+    
+    .three {
+        text-align: center;
+        width: 80%;
+        margin: 80px auto;
+    }
+    
+    footer {
+    
+        padding: 10px 40px;
+        background-color: #f5f6f8;
+        margin: 10px 0;
+        margin-top: 40px;
+    
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin: 0 70px;
+        }
+    
+        .end {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+        }
+    }
+}
