@@ -1,0 +1,200 @@
+[
+  {
+    "id": "one",
+    "option": "Tall",
+    "time": 15,
+    "timeTitle": "15 minutes",
+    "content": {
+      "grammar": {
+        "color": "yellow",
+        "tasks": [
+          "review previous lesson",
+          "study a new lesson + exercises",
+          "grammar app check-in"
+        ]
+      },
+      "vocabulary": {
+        "color": "green",
+        "tasks": [
+          "review previous quizlet decks",
+          "study 10 new words",
+          "translate a song lyrics",
+          "daily vocabulary app ****check-in"
+        ]
+      },
+      "reading": {
+        "color": "pink",
+        "tasks": [
+          "read a chapter of current book",
+          "study a podcast script",
+          "read a chapter of a webtoon"
+        ]
+      },
+      "speaking": {
+        "color": "orange",
+        "tasks": [
+          "daily speaking app ****check-in",
+          "attend an **i**talki lesson",
+          "facetime/video call a friend"
+        ]
+      },
+      "listening": {
+        "color": "blue",
+        "tasks": [
+          "watch an episode of a variety show",
+          "watch an episode of a drama/ movie",
+          "watch a youtube vlog video",
+          "listen to a podcast"
+        ]
+      },
+      "writing": {
+        "color": "purple",
+        "tasks": [
+          "write a diary entry about your day",
+          "practice building sentences"
+        ]
+      }
+    }
+  },
+
+  {
+    "id": "two",
+    "option": "Grande",
+    "time": 30,
+    "timeTitle": "30 minutes",
+    "content": {
+      "grammar": {
+        "color": "yellow",
+        "tasks": ["study a lesson + exercises", "translate a song lyrics"]
+      },
+      "vocabulary": {
+        "color": "green",
+        "tasks": ["learn 10 new words", "make quizlet decks"]
+      },
+      "reading": {
+        "color": "pink",
+        "tasks": [
+          "catch up with current book reading",
+          "read a chapter of a webtoon"
+        ]
+      },
+      "speaking": {
+        "color": "orange",
+        "tasks": [
+          "video call/ facetime with a friend",
+          "do a 30-minute italki lesson"
+        ]
+      },
+      "listening": {
+        "color": "blue",
+        "tasks": [
+          "watch an episode of a variety show",
+          "watch an episode of a drama/ movie",
+          "watch a youtube vlog video",
+          "listen to a podcast"
+        ]
+      },
+      "writing": {
+        "color": "purple",
+        "tasks": [
+          "write a diary entry about your day",
+          "practice building sentences"
+        ]
+      }
+    }
+  },
+
+  {
+    "id": "three",
+    "option": "Venti",
+    "time": 60,
+    "timeTitle": "1-2 hours",
+    "content": {
+      "grammar": {
+        "color": "yellow",
+        "tasks": ["study a lesson + exercises", "translate a song lyrics"]
+      },
+      "vocabulary": {
+        "color": "green",
+        "tasks": ["learn 10 new words", "make quizlet decks"]
+      },
+      "reading": {
+        "color": "pink",
+        "tasks": [
+          "catch up with current book reading",
+          "read a chapter of a webtoon"
+        ]
+      },
+      "speaking": {
+        "color": "orange",
+        "tasks": [
+          "video call/ facetime with a friend",
+          "do a 30-minute italki lesson"
+        ]
+      },
+      "listening": {
+        "color": "blue",
+        "tasks": [
+          "watch an episode of a variety show",
+          "watch an episode of a drama/ movie",
+          "watch a youtube vlog video",
+          "listen to a podcast"
+        ]
+      },
+      "writing": {
+        "color": "purple",
+        "tasks": [
+          "write a diary entry about your day",
+          "practice building sentences"
+        ]
+      }
+    }
+  },
+
+  {
+    "id": "four",
+    "option": "Trenta",
+    "time": 0,
+    "timeTitle": "Whole day",
+    "content": {
+      "grammar": {
+        "color": "yellow",
+        "tasks": ["study a lesson + exercises", "translate a song lyrics"]
+      },
+      "vocabulary": {
+        "color": "green",
+        "tasks": ["learn 10 new words", "make quizlet decks"]
+      },
+      "reading": {
+        "color": "pink",
+        "tasks": [
+          "catch up with current book reading",
+          "read a chapter of a webtoon"
+        ]
+      },
+      "speaking": {
+        "color": "orange",
+        "tasks": [
+          "video call/ facetime with a friend",
+          "do a 30-minute italki lesson"
+        ]
+      },
+      "listening": {
+        "color": "blue",
+        "tasks": [
+          "watch an episode of a variety show",
+          "watch an episode of a drama/ movie",
+          "watch a youtube vlog video",
+          "listen to a podcast"
+        ]
+      },
+      "writing": {
+        "color": "purple",
+        "tasks": [
+          "write a diary entry about your day",
+          "practice building sentences"
+        ]
+      }
+    }
+  }
+]

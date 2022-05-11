@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------- */
+/* Colors */
+
+:root,
+.dark-mode {
+  --primary-dark: #312c51;
+  --primary-light-dark: #47426d;
+  --primary-gold: #eabe8c;
+  --primary-dark-gold: #f0c38e;
+  --dark-font: #383838;
+  --details: #fff9e8;
+  --text-shadow: 2px 2px 4px rgb(173, 173, 173);
+}
+
+.light-mode {
+  --primary-dark: #fff;
+  --primary-light-dark: #f8f6da;
+  --details: #fffdf5;
+}
+
+.pink {
+  background-color: #f4dfeb;
+  color: #e5b3cf;
+}
+
+.blue {
+  background-color: #c5e2ef;
+  color: #afd7e9;
+}
+
+.purple {
+  background-color: #dfd0f3;
+  color: #c8aeea;
+}
+
+.orange {
+  background-color: #ffe2c6;
+  color: #ffca99;
+}
+
+.yellow {
+  background-color: #fff2cb;
+  color: #f3d474;
+}
+
+.green {
+  background-color: #cfe9d5;
+  color: #a4d8b0;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  background-color: var(--primary-dark);
+  transition: all ease 0.5s;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* --------------------- */
+/* Back to portfolio */
+
+.port {
+  background-color: #f8f6da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.port img,
+.port h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 0;
+}
+
+.port img {
+  margin-right: 30px;
+  margin-left: -30px;
+}
+
+.port h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.port a {
+  text-decoration: none;
+  color: black;
+}
+
+/* --------------------- */
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+.how-to {
+  flex: 1 1 auto;
+}
+.open-modal {
+  border: none;
+  background: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.light-mode .open-modal {
+  color: #312c51;
+  border-bottom: 2px solid #312c51;
+}
+
+.mode-toggle {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.toggle-btn:hover {
+  text-shadow: var(--text-shadow);
+}
+.fa-sun {
+  color: #fff;
+}
+.fa-moon {
+  color: #312c51;
+}
+
+/* --------------------- */
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 700px;
+  max-width: 80%;
+  color: #312c51;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal__header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal__header .modal-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.modal__header .close-modal {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal__body {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.modal__body ul,
+.modal__body li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* --------------------- */
+/* Main */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.menu-content {
+  width: 70%;
+}
+
+.todo-section {
+  width: 30%;
+}
+
+/* --------------------- */
+/* Menu */
+
+.menu-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary-dark-gold);
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-option {
+  width: 25%;
+  min-width: 150px;
+  height: 120px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  background-color: var(--primary-light-dark);
+}
+.menu-option:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-shadow: var(--text-shadow);
+}
+
+.light-mode .menu-option {
+  border: 1px solid #999;
+}
+.menu-option h1 {
+  font-size: 2rem;
+  color: var(--primary-gold);
+}
+.menu-option p {
+  color: #fff;
+}
+
+.light-mode .menu-option p {
+  color: var(--dark-font);
+}
+.active-menu {
+  background-color: var(--primary-gold);
+}
+.active-menu > h1,
+.light-mode .active-menu > h1 {
+  color: #fff;
+  text-shadow: var(--text-shadow);
+}
+
+/* --------------------- */
+/* Content */
+
+.details-flex {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--details);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 17%;
+  color: #312c51;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.close-btn:hover {
+  text-shadow: var(--text-shadow);
+}
+
+.title {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+  color: var(--dark-font);
+  margin: 10px 0;
+  text-shadow: var(--text-shadow);
+}
+
+.detail {
+  width: 48%;
+  margin: 20px 0;
+}
+
+.detail h1 {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  color: var(--dark-font);
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.detail ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.detail ul li {
+  margin-bottom: 10px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.detail ul li:hover {
+  text-decoration: underline;
+}
+
+.detail ul li:first-child {
+  margin-top: 10px;
+}
+
+.detail ul li:last-child {
+  margin-bottom: 0;
+}
+
+.fa-utensils {
+  float: right;
+  padding: 3px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.task-item .add-btn {
+  background: none;
+  padding: 0 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.task-item .add-btn:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+.active-content {
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.todo-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 0;
+}
+.todo-wrapper h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.light-mode h1 {
+  color: var(--dark-font);
+}
+
+.todo-list {
+  min-width: 30%;
+  border: 3px solid var(--primary-dark-gold);
+  border-radius: 10px;
+  background-color: var(--primary-light-dark);
+}
+
+.light-mode .todo-list {
+  background: none;
+}
+
+.todo {
+  margin: 0.5rem 0;
+  color: var(--primary-gold);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  border-bottom: 1px solid var(--primary-dark-gold);
+}
+.todo:first-child {
+  margin-top: 0;
+}
+.todo:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.light-mode .todo {
+  color: var(--dark-font);
+}
+.light-mode .big-title {
+  color: #900314;
+  text-shadow: var(--text-shadow);
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: none;
+  /* color: #eabe8c; */
+  color: #e97384;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  color: #f3b241;
+}
+.trash-btn:hover,
+.complete-btn:hover {
+  color: rgb(246, 220, 220);
+  text-shadow: 2px 2px 4px rgb(173, 173, 173);
+}
+.todo-item {
+  padding: 0 0.5rem;
+}
+
+.fa-solid,
+.fas {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .menu-content,
+  .todo-section {
+    width: 90%;
+  }
+}

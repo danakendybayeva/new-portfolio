@@ -43,11 +43,12 @@ h1 {
 }
 .card {
   margin: 10px;
+  margin-bottom: 30px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 300px;
+  width: 350px;
 }
 .card-header img {
   width: 100%;
@@ -94,10 +95,11 @@ h1 {
 @media (max-width: 765px) {
   h1 {
     font-size: 22px;
-    width: 80%;
   }
 
   .container {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

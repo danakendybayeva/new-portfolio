@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Learn Korean</title>
+  </head>
+  <body>
+    <div class="port">
+      <a href="../index.html"
+        ><img src="./icon-go-back-30.png" alt="back" />
+        <h1>Back to portfolio</h1></a
+      >
+    </div>
+    <header class="header">
+      <div class="how-to">
+        <button class="open-modal">How to use it?</button>
+      </div>
+      <div class="mode-toggle">
+        <button class="toggle-btn"><i class="fa-solid fa-sun"></i></button>
+      </div>
+    </header>
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal-title">How to use this website</div>
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal__body">
+        <p>
+          The purpose of this website is to help you keep track of your learning
+          routine and motivate you to study every single day, even when you only
+          have as little as 15 minutes
+        </p>
+        <br />
+        <ul>
+          <li>
+            Choose one (or more than one) activity to do based on how much time
+            you have and how you feel that day.
+          </li>
+          <li>Click on button with utensils to add task</li>
+          <li>Click on Trash button to delete task from todo list</li>
+          <li>Click on Check button to complete task from todo list</li>
+        </ul>
+        <br />
+        <p>
+          There is an auto changing mode, it will adapt to your current time
+          <br />You can also change mode by clicking on Sun/Moon
+        </p>
+      </div>
+    </div>
+    <main class="main">
+      <div class="menu-content">
+        <section id="menu">
+          <div class="menu-wrapper">
+            <div class="inner">
+              <h1 class="menu-title big-title">
+                How much time can i spend studying today?
+              </h1>
+              <div class="menu-flex">
+                <div class="menu-option" data-goto="one">
+                  <h1>Tall</h1>
+                  <p>15 minutes</p>
+                </div>
+                <div class="menu-option" data-goto="two">
+                  <h1>Grande</h1>
+                  <p>30 minutes</p>
+                </div>
+                <div class="menu-option" data-goto="three">
+                  <h1>Venti</h1>
+                  <p>1-2 hours</p>
+                </div>
+                <div class="menu-option" data-goto="four">
+                  <h1>Trenta</h1>
+                  <p>Oh I have whole day!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="content">
+          <div class="content-wrapper"></div>
+        </section>
+      </div>
+
+      <div class="todo-section">
+        <section id="todo">
+          <div class="todo-wrapper">
+            <h1 class="big-title">ToDo for today</h1>
+            <ul class="todo-list"></ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="overlay"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
