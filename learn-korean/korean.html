@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link rel="icon" href="../icon.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Learn Korean</title>
   </head>
@@ -25,6 +25,7 @@
     <header class="header">
       <div class="how-to">
         <button class="open-modal">How to use it?</button>
+        <button class="open-modal add-task">Add Task</button>
       </div>
       <div class="mode-toggle">
         <button class="toggle-btn"><i class="fa-solid fa-sun"></i></button>
@@ -58,6 +59,50 @@
         </p>
       </div>
     </div>
+    <div class="modal modal__add-task">
+      <div class="modal__header">
+        <div class="modal-title">Add new task</div>
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal__body">
+        <h1>Please fill the form to add new task</h1>
+        <form class="form__add-task">
+          <label for="title">Task title</label>
+          <input type="text" name="title" id="title" class="input__title" />
+          <label for="duration">Choose duration of the task:</label>
+          <select name="duration" id="duration">
+            <option value="tall">Tall - 15 minutes</option>
+            <option value="grande">Grande - 30 minutes</option>
+            <option value="venti">Venti - 1-2 hours</option>
+            <option value="trenta">Trenta - whole day</option>
+          </select>
+          <label for="type">Choose type of the task:</label>
+          <select name="type" id="type">
+            <option value="grammar">Grammar</option>
+            <option value="vocabulary">Vocabulary</option>
+            <option value="reading">Reading</option>
+            <option value="speaking">Speaking</option>
+            <option value="listening">Listening</option>
+            <option value="writing">Writing</option>
+          </select>
+          <button class="btn__add-task">Add</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal__time">
+      <div class="modal__header">
+        <div class="modal-title">Choose time you want to work</div>
+        <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal__body">
+        <div class="time-blocks">
+          <div class="block" data-time-amount="0.1">15 minutes</div>
+          <div class="block" data-time-amount="30">30 minutes</div>
+          <div class="block" data-time-amount="45">45 minutes</div>
+          <div class="block" data-time-amount="60">60 minutes</div>
+        </div>
+      </div>
+    </div>
     <main class="main">
       <div class="menu-content">
         <section id="menu">
@@ -68,19 +113,19 @@
               </h1>
               <div class="menu-flex">
                 <div class="menu-option" data-goto="one">
-                  <h1>Tall</h1>
+                  <h1>Tall <i class="fa-solid fa-circle pink"></i></h1>
                   <p>15 minutes</p>
                 </div>
                 <div class="menu-option" data-goto="two">
-                  <h1>Grande</h1>
+                  <h1>Grande <i class="fa-solid fa-circle blue"></i></h1>
                   <p>30 minutes</p>
                 </div>
                 <div class="menu-option" data-goto="three">
-                  <h1>Venti</h1>
+                  <h1>Venti <i class="fa-solid fa-circle green"></i></h1>
                   <p>1-2 hours</p>
                 </div>
                 <div class="menu-option" data-goto="four">
-                  <h1>Trenta</h1>
+                  <h1>Trenta <i class="fa-solid fa-circle orange"></i></h1>
                   <p>Oh I have whole day!</p>
                 </div>
               </div>
@@ -97,12 +142,31 @@
         <section id="todo">
           <div class="todo-wrapper">
             <h1 class="big-title">ToDo for today</h1>
+            <h1>Time studied: <span class="time-total"></span></h1>
             <ul class="todo-list"></ul>
           </div>
         </section>
       </div>
     </main>
-
+    <div class="timer hidden">
+      <div class="timer__header">
+        <h1>Timer</h1>
+        <button class="close-modal reset">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="show-time"></div>
+      <div class="countdown">
+        <span class="hours"></span><span class="minutes">00</span>:<span
+          class="seconds"
+          >00</span
+        >
+      </div>
+      <div class="controls">
+        <button class="control start"><i class="fa-solid fa-play"></i></button>
+        <button class="reset"><i class="fa-solid fa-stop"></i></button>
+      </div>
+    </div>
     <div id="overlay"></div>
     <script src="./app.js"></script>
   </body>

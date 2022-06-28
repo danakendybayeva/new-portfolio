@@ -123,6 +123,9 @@ li {
   color: #fff;
   cursor: pointer;
 }
+.open-modal:first-child {
+  margin-right: 25px;
+}
 .light-mode .open-modal {
   color: #312c51;
   border-bottom: 2px solid #312c51;
@@ -184,7 +187,7 @@ li {
   font-weight: bold;
 }
 
-.modal__header .close-modal {
+.close-modal {
   cursor: pointer;
   border: none;
   outline: none;
@@ -202,6 +205,38 @@ li {
 .modal__body li {
   list-style: disc;
   list-style-position: inside;
+}
+
+.form__add-task {
+  display: flex;
+  flex-direction: column;
+}
+.form__add-task label {
+  font-size: 1.4rem;
+}
+.form__add-task .input__title,
+.form__add-task select {
+  padding: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+}
+.btn__add-task {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 20px auto;
+  width: 5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.btn__add-task:hover {
+  background-color: beige;
+  color: #000;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #overlay {
@@ -233,11 +268,11 @@ li {
 }
 
 .menu-content {
-  width: 70%;
+  width: 65%;
 }
 
 .todo-section {
-  width: 30%;
+  width: 35%;
 }
 
 /* --------------------- */
@@ -291,6 +326,11 @@ li {
 }
 .menu-option p {
   color: #fff;
+}
+.menu-option .fa-circle {
+  background: none;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .light-mode .menu-option p {
@@ -464,10 +504,17 @@ li {
 
 .todo li {
   flex: 1;
+  line-height: 1.25;
+}
+
+.todo .fa-circle {
+  background: none;
+  text-shadow: 2px 2px 2px #000000;
 }
 
 .trash-btn,
-.complete-btn {
+.complete-btn,
+.timer-btn {
   background: none;
   /* color: #eabe8c; */
   color: #e97384;
@@ -479,13 +526,16 @@ li {
 .complete-btn {
   color: #f3b241;
 }
+.timer-btn {
+  color: #5abde8;
+}
 .trash-btn:hover,
-.complete-btn:hover {
-  color: rgb(246, 220, 220);
-  text-shadow: 2px 2px 4px rgb(173, 173, 173);
+.complete-btn:hover,
+.timer-btn:hover {
+  transform: scale(1.4);
 }
 .todo-item {
-  padding: 0 0.5rem;
+  padding: 0.5rem;
 }
 
 .fa-solid,
@@ -501,6 +551,71 @@ li {
 .fall {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
+}
+
+.timer {
+  width: 50%;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px 2px #ccc;
+}
+.timer__header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timer__header h1 {
+  font-size: 2.5rem;
+}
+.timer__header .fa-xmark {
+  font-size: 1.75rem;
+}
+.show-time {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: chocolate;
+}
+
+.countdown {
+  font-size: 3rem;
+}
+.controls button {
+  width: 50px;
+  height: 50px;
+  /* padding: 15px; */
+  border: none;
+  background-color: chocolate;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.time-blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.block {
+  width: 20%;
+  height: 75px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.block:hover {
+  background-color: #e7e5c0;
 }
 
 @keyframes scale-in-center {
