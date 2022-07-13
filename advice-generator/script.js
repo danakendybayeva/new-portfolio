@@ -12,7 +12,6 @@ function getAdvice() {
       return response.json();
     })
     .then((data) => {
-      console.log(data.slip);
       adviceID.innerText = "Advice #" + data.slip.id;
       adviceText.innerText = data.slip.advice;
     });
