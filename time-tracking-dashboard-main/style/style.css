@@ -354,7 +354,8 @@ body {
             align-items: flex-start;
   }
   .menu-card .menu__link {
-    margin: 8px;
+    margin: 10px;
+    padding: 10px;
   }
   .card__second {
     -webkit-box-orient: vertical;

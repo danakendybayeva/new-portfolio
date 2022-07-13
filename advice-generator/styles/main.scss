@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import "colors";
+@import "media";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $dark-blue;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+}
+
+.port {
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  background-color: $light-cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.advice {
+  max-width: 90vh;
+  max-height: 100%;
+  // width: 40%;
+  // height: auto;
+  background-color: $dark-grayish-blue;
+  border-radius: 15px;
+  padding: 45px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__id {
+    font-size: 16px;
+    margin-bottom: 35px;
+    color: $neon-green;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    color: $light-cyan;
+  }
+  &__divider {
+    margin-bottom: 25px;
+  }
+}
+
+.divider-mobile {
+  display: none;
+}
+
+.dice {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: $neon-green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  img {
+    pointer-events: none;
+  }
+}
+.dice:hover {
+  box-shadow: 0px 0px 30px 5px rgba(82, 255, 169, 1);
+}
+
+@include mobile {
+  .advice {
+    padding: 15px;
+  }
+  .divider-desktop {
+    display: none;
+  }
+  .divider-mobile {
+    display: block;
+    margin-bottom: 20px;
+  }
+}

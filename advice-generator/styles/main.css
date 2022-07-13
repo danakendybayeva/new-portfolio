@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1f2632;
+  font-family: "Manrope", sans-serif;
+  font-size: 28px;
+}
+
+.port {
+  width: 100%;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  background-color: #cee3e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.port a {
+  text-decoration: none;
+  color: #1f2632;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+}
+
+.advice {
+  max-width: 90vh;
+  max-height: 100%;
+  background-color: #323a49;
+  border-radius: 15px;
+  padding: 45px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.advice__id {
+  font-size: 16px;
+  margin-bottom: 35px;
+  color: #52ffa8;
+}
+
+.advice__text {
+  margin-bottom: 35px;
+  color: #cee3e9;
+}
+
+.advice__divider {
+  margin-bottom: 25px;
+}
+
+.divider-mobile {
+  display: none;
+}
+
+.dice {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #52ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.dice img {
+  pointer-events: none;
+}
+
+.dice:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px #52ffa9;
+          box-shadow: 0px 0px 30px 5px #52ffa9;
+}
+
+@media screen and (max-width: 575px) {
+  .advice {
+    padding: 15px;
+  }
+  .divider-desktop {
+    display: none;
+  }
+  .divider-mobile {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
