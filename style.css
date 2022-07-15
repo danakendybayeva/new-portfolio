@@ -43,6 +43,13 @@ a {
   margin: 0 auto;
 }
 
+.profile__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
 .profile__name {
   text-align: left;
 }
@@ -199,8 +206,27 @@ a {
     font-size: 22px;
   }
 
+  .main {
+    padding: 1rem;
+  }
+  .profile__desc {
+    align-items: center;
+    text-align: center;
+  }
+
   .profile__talk {
     flex-direction: column;
+    align-items: center;
+  }
+  .profile__socials {
+    flex-direction: column;
+  }
+  .social__list {
+    display: flex;
+    gap: 20px;
+  }
+  .profile__socials h3 {
+    margin-right: 0;
   }
 
   .cards__container {
@@ -212,12 +238,15 @@ a {
   }
 
   .profile {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
-    margin-bottom: 40px;
+    margin: 40px auto;
     width: 90%;
   }
+  .profile h1:last-child {
+    font-size: 3rem;
+  }
   .profile img {
-    width: 50%;
+    width: 40%;
   }
 }
