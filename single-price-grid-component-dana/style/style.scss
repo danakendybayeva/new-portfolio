@@ -9,6 +9,7 @@ body {
   background: $light-gray;
   font-family: "Karla", sans-serif;
   margin: 0;
+  padding: 10px;
   // display: flex;
   align-items: center;
   justify-content: center;
@@ -20,9 +21,9 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
   max-width: 800px;
-  margin: auto;
+  margin: 20px auto;
   overflow: hidden;
-  width: 800px;
+  // width: 800px;
 }
 
 .join {
@@ -43,7 +44,7 @@ main {
 .row {
   display: flex;
 
-  @include mobile {
+  @include tablet {
     flex-direction: column;
   }
 }
@@ -105,19 +106,23 @@ section {
   padding: 35px;
 }
 
-.port{
+.port {
   background-color: $light-cyan;
-  align-items: center;
-  // border-radius: 30px;
 
-  img, h1{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 30px 0;
+  a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 30px;
+    gap: 20px;
   }
 
-  img{
-    margin: auto 30px;
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+  svg path {
+    fill: white;
   }
 
   h1 {
@@ -125,7 +130,7 @@ section {
     color: white;
   }
 
-  a{
+  a {
     text-decoration: none;
     color: black;
   }
