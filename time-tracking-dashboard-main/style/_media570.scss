@@ -1,31 +1,36 @@
 @media screen and (min-width: 570px) {
-    .container {
-        display: grid;
-        grid-template-columns: 48% 48%;
+  .port {
+    h1 {
+      font-size: 2rem;
     }
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
 
-    .menu-card {
-        grid-column: 1 / span 2;
+  .menu-card {
+    grid-column: 1 / span 2;
 
-        .card-report {
-            gap: 3rem;
-        }
+    .card-report {
+      gap: 3rem;
     }
+  }
 
-    .card {
-        &__second {
-            flex-direction: column;
-            align-items: flex-start;
-            
-            h1 {
-                font-size: 3rem;
-                margin: 0;
-                margin-top: 1rem;
-            }
+  .card {
+    &__second {
+      flex-direction: column;
+      align-items: flex-start;
 
-            p {
-                margin-top: 0;
-            }
-        }
+      h1 {
+        font-size: 3rem;
+        margin: 0;
+        margin-top: 1rem;
+      }
+
+      p {
+        margin-top: 0;
+      }
     }
+  }
 }

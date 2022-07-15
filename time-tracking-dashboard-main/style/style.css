@@ -1,7 +1,7 @@
 body {
   background: #0f1424;
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .port {
@@ -12,24 +12,20 @@ body {
   border-radius: 30px;
 }
 
-.port img, .port h1 {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 30px 0;
-}
-
-.port img {
-  margin: auto 30px;
-}
-
 .port h1 {
+  display: inline-block;
   text-align: center;
   color: black;
 }
 
 .port a {
+  margin-left: 30px;
   text-decoration: none;
   color: black;
+}
+
+.port h1 {
+  font-size: 1.5rem;
 }
 
 .container {
@@ -130,6 +126,7 @@ body {
 
 .menu-card .menu__link {
   color: #6f76c8;
+  cursor: pointer;
 }
 
 .menu-card .menu__active {
@@ -178,13 +175,12 @@ body {
 }
 
 .reg-card .card__first h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
 }
 
-.reg-card .card__first img {
-  width: 30px;
-  height: auto;
+.reg-card .card__first .fa-ellipsis {
+  font-size: 20px;
 }
 
 .reg-card .card__second {
@@ -242,6 +238,9 @@ body {
 }
 
 @media screen and (min-width: 570px) {
+  .port h1 {
+    font-size: 2rem;
+  }
   .container {
     display: -ms-grid;
     display: grid;

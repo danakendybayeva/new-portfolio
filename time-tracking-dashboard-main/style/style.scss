@@ -3,30 +3,21 @@
 body {
   background: $very-dark-blue;
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
-.port{
+.port {
   background-color: white;
   align-items: center;
   border-radius: 30px;
 
-  img, h1{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 30px 0;
-  }
-
-  img{
-    margin: auto 30px;
-  }
-
   h1 {
+    display: inline-block;
     text-align: center;
     color: black;
   }
-
-  a{
+  a {
+    margin-left: 30px;
     text-decoration: none;
     color: black;
   }
