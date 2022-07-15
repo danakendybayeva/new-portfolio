@@ -93,6 +93,10 @@ a {
 .profile__socials h3 {
   margin-right: 20px;
 }
+.social__list {
+  display: flex;
+  gap: 20px;
+}
 
 .social__item {
   width: 40px;
@@ -132,7 +136,7 @@ a {
 }
 
 .portfolio {
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .portfolio h1 {
   text-align: center;
@@ -221,10 +225,7 @@ a {
   .profile__socials {
     flex-direction: column;
   }
-  .social__list {
-    display: flex;
-    gap: 20px;
-  }
+
   .profile__socials h3 {
     margin-right: 0;
   }
