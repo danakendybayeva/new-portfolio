@@ -4,6 +4,11 @@
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
   margin: 0;
@@ -18,19 +23,23 @@ p {
   background-color: none;
 }
 
-.port img, .port h1 {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 30px 0;
+.port a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+  gap: 20px;
 }
 
-.port img {
-  margin-right: 30px;
-  margin-left: -30px;
-}
-
-.port h1 {
-  text-align: center;
+.port svg {
+  height: 32px;
+  width: 32px;
 }
 
 .port a {
@@ -163,14 +172,24 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 100px;
-  margin: 80px 30px;
+  width: 80%;
+  margin: 80px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .companies {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .three {
@@ -184,6 +203,7 @@ footer {
   background-color: #f5f6f8;
   margin: 10px 0;
   margin-top: 40px;
+  width: 100%;
 }
 
 footer .logo {
@@ -193,23 +213,28 @@ footer .logo {
 }
 
 footer .end {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 60% 20%;
-      grid-template-columns: 20% 60% 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 footer .end ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   list-style: none;
-  max-width: 400px;
   text-align: left;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 150px;
 }
 
 footer .end .socials img {
@@ -221,8 +246,10 @@ footer a {
   color: #4c545d;
 }
 
-footer p a {
-  color: #26baa4;
+@media screen and (max-width: 768px) {
+  footer .end ul {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -270,7 +297,7 @@ footer p a {
   }
   .container--right div {
     width: 76%;
-    margin: 60px 12%  auto;
+    margin: 60px 12% auto;
     text-align: center;
   }
   .two div {
@@ -323,27 +350,10 @@ footer p a {
     width: 80%;
     margin: 80px auto;
   }
-  footer {
-    padding: 10px 40px;
-    background-color: #f5f6f8;
-    margin: 10px 0;
-    margin-top: 40px;
-  }
-  footer .logo {
-    width: 50px;
-    height: 50px;
-    margin: 0 70px;
-  }
   footer .end {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -359,6 +369,7 @@ footer p a {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    margin: 20px auto;
   }
   footer .end ul li {
     margin: 10px 0;
