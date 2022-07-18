@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import "colors";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: $light-grayish-cyan;
+  width: 100%;
+  padding: 10px;
+}
+
+.port {
+  align-items: center;
+  margin: 0 auto;
+  background-color: $white;
+  border-radius: 15px;
+
+  h1 {
+    text-align: center;
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.calculator {
+  @include flex;
+  padding-top: 50px;
+  gap: 40px;
+}
+.logo {
+  font-size: 24px;
+  color: $dark-grayish-cyan;
+  text-transform: uppercase;
+  letter-spacing: 0.42em;
+}
+.calculator__container {
+  width: 100%;
+  background-color: $white;
+  border-radius: 25px 25px 0 0;
+  @include flex;
+}
+.calculator__input {
+  @include flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 30px;
+}
+.calculator__input > * {
+  width: 100%;
+}
+.fa-dollar-sign,
+.fa-user {
+  position: absolute;
+  font-size: 24px;
+  color: $grayish-cyan;
+  padding: 23px 18px;
+  text-align: center;
+}
+.calculator__input input {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: $very-light-grayish-cyan;
+  text-align: right;
+  color: $very-dark-cyan;
+  border: 3px solid $very-light-grayish-cyan;
+}
+.calculator__input input:focus {
+  outline: none;
+  border: 3px solid $strong-cyan;
+}
+.calculator__input input::placeholder {
+  color: $grayish-cyan;
+}
+.input__label input {
+  padding: 15px 15px 15px 40px;
+}
+.calculator__input .error input:focus {
+  border: 3px solid $error;
+}
+.input__title {
+  color: $dark-grayish-cyan;
+  margin-bottom: 10px;
+}
+.tip__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.tip__btn {
+  width: 100%;
+  border-radius: 5px;
+  background-color: $very-dark-cyan;
+  color: $white;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.tip__btn:hover {
+  background-color: $hover;
+  color: $very-dark-cyan;
+}
+.active__btn {
+  background-color: $strong-cyan;
+  color: $very-dark-cyan;
+}
+.tip__input input {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.bill__text,
+.people__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.error__title {
+}
+[class*="__error"] {
+  display: none;
+  color: $error;
+  margin-bottom: 10px;
+}
+.calculator__output {
+  width: 100%;
+  background-color: $very-dark-cyan;
+  padding: 25px;
+  border-radius: 25px 25px 0 0;
+}
+.output__text {
+  width: 100%;
+  padding-top: 25px;
+}
+.output__desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.output__title {
+  color: $white;
+}
+.output__person {
+  font-size: 13px;
+  color: $grayish-cyan;
+}
+.output__number {
+  font-size: 32px;
+  color: $strong-cyan;
+  letter-spacing: -0.015em;
+}
+.output__btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: $strong-cyan;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: $very-dark-cyan;
+  cursor: pointer;
+}
+.output__btn:hover {
+  background-color: $hover;
+}
+
+@import "tablet";
+@import "desktop";

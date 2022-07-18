@@ -213,6 +213,9 @@ a {
     font-size: 22px;
   }
 
+  .profile {
+    height: 100%;
+  }
   .main {
     padding: 1rem;
   }

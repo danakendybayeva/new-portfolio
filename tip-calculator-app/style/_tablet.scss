@@ -1,0 +1,36 @@
+@import "mixins";
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .port {
+    width: 80%;
+  }
+  .calculator {
+    padding-top: 30px;
+  }
+  .calculator__container {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 45px;
+    width: 80%;
+    padding: 30px;
+    border-radius: 25px;
+  }
+
+  .calculator__input {
+    padding: 0;
+  }
+
+  .tip__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .calculator__output {
+    @include flex;
+    justify-content: space-between;
+    border-radius: 25px;
+  }
+}

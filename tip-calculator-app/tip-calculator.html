@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="../icon.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Dana | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="port">
+      <a href="../index.html">
+        <h1>
+          <i class="fa-solid fa-circle-arrow-left"></i> Back to portfolio
+        </h1></a
+      >
+    </div>
+    <div class="calculator">
+      <div class="logo">Spli<br />tter</div>
+      <div class="calculator__container">
+        <div class="calculator__input">
+          <div class="input__bill">
+            <div class="bill__text">
+              <div class="input__title">Bill</div>
+              <div class="bill__error">Can't be zero!</div>
+            </div>
+            <div class="input__label">
+              <i class="fa-solid fa-dollar-sign"></i>
+              <input type="text" name="bill" id="bill" placeholder="0" />
+            </div>
+          </div>
+          <div class="input__tip">
+            <div class="input__title">Select Tip %</div>
+            <div class="tip__list">
+              <div class="tip__btn active__btn">5%</div>
+              <div class="tip__btn">10%</div>
+              <div class="tip__btn">15%</div>
+              <div class="tip__btn">25%</div>
+              <div class="tip__btn">50%</div>
+              <div class="tip__input">
+                <input
+                  type="text"
+                  name="custom"
+                  id="custom"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="input__people">
+            <div class="people__text">
+              <div class="input__title">Number of People</div>
+              <div class="people__error">Can't be zero!</div>
+              <!-- <div class="error__title">Numbers only</div> -->
+            </div>
+            <div class="input__label">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" name="people" id="people" placeholder="1" />
+            </div>
+          </div>
+        </div>
+        <div class="calculator__output">
+          <div class="output__text">
+            <div class="output__desc">
+              <div class="output__header">
+                <div class="output__title">Tip Amount</div>
+                <div class="output__person">/ person</div>
+              </div>
+              <div class="output__number output__tip">$0.00</div>
+            </div>
+            <div class="output__desc">
+              <div class="output__header">
+                <div class="output__title">Total</div>
+                <div class="output__person">/ person</div>
+              </div>
+              <div class="output__number output__total">$0.00</div>
+            </div>
+          </div>
+          <div class="output__btn btn">Reset</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
