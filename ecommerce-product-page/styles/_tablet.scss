@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+  .product__modal {
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    padding: 0;
+    z-index: 3;
+    text-align: right;
+  }
+  .product__modal .image__big {
+    position: relative;
+  }
+  .product__image .image__control {
+    display: none;
+  }
+  .image__big .back {
+    left: -25px;
+  }
+  .image__big .forward {
+    right: -25px;
+  }
+  .product__modal .modal__image,
+  .modal__close {
+    margin: 0 auto;
+    width: 55%;
+  }
+  .modal__close {
+    margin-bottom: 15px;
+    color: $white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .fa-xmark {
+    cursor: pointer;
+  }
+  .fa-xmark:hover {
+    color: $orange;
+  }
+}

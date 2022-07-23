@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+@import "colors";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  padding-bottom: 10px;
+  height: 100%;
+  // overflow: hidden;
+}
+
+.port {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: $pale-orange;
+}
+.port a {
+  color: #000000;
+}
+.port h1 {
+  font-size: 24px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 50px;
+}
+
+.overlay,
+.light-overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color: #000000, $alpha: 0.75);
+  transition: 200ms ease-in-out;
+  pointer-events: none;
+  z-index: 2;
+}
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.light-overlay.active {
+  pointer-events: all;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa-solid {
+  pointer-events: none;
+}
+
+@import "header";
+@import "main";
+@import "tablet";
+@import "mobile";

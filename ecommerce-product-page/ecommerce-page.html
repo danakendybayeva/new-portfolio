@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Dana | E-commerce product page</title>
+  </head>
+  <body>
+    <div class="port">
+      <a href="../index.html"
+        ><h1>
+          <i class="fa-solid fa-circle-arrow-left"></i>&nbsp;&nbsp; Back to
+          Dana's Portfolio
+        </h1></a
+      >
+    </div>
+    <div class="wrapper">
+      <header class="header">
+        <div class="icon__menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header__logo">
+          <a href="#"> <img src="./images/logo.svg" alt="Logo" /></a>
+        </div>
+        <nav class="header__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Collections</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Men</a>
+            </li>
+            <li class="menu__item active__link">
+              <a href="#" class="menu__link">Women</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right">
+          <div class="header__cart">
+            <div class="cart__num">0</div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="cart__modal hidden">
+            <div class="cart__title">Cart</div>
+            <div class="cart__box">
+              <div class="cart__full">
+                <div class="cart__list">
+                  <div class="cart__item">
+                    <div class="item__img">
+                      <img
+                        src="./images/image-product-1.jpg"
+                        alt="img"
+                        class="img__item"
+                      />
+                    </div>
+                    <div class="item__text">
+                      <div class="item__name">Something else</div>
+                      <div class="item__desc">
+                        <span class="item__price">$100.00</span> x
+                        <span class="item__amount">4</span>
+                        <span class="item__total">$400.00</span>
+                      </div>
+                    </div>
+                    <div class="item__btn">
+                      <p><i class="fa-solid fa-trash-can"></i></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart__btn btn">Checkout</div>
+              </div>
+              <div class="cart__empty hidden">Your cart is empty.</div>
+            </div>
+          </div>
+          <div class="header__profile">
+            <img src="./images/image-avatar.png" alt="avatar" />
+          </div>
+        </div>
+      </header>
+      <nav class="mobile__menu hidden">
+        <div class="close__mobile">
+          <div class="close__mobileBtn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Collections</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Men</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Women</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <main class="main">
+        <div class="product">
+          <div class="product__image">
+            <div class="image__big">
+              <div class="image__control back">
+                <i class="fa-solid fa-angle-left"></i>
+              </div>
+              <img
+                src="./images/image-product-1.jpg"
+                alt=""
+                class="big-image"
+              />
+              <div class="image__control forward">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </div>
+            <div class="image__thumbnail">
+              <div class="thumb__img current__img">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+              </div>
+              <div class="thumb__img">
+                <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+              </div>
+              <div class="thumb__img">
+                <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+              </div>
+              <div class="thumb__img">
+                <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="product__text">
+            <div class="product__company">Sneaker Company</div>
+            <div class="product__title">Fall Limited Edition Sneakers</div>
+            <div class="product__desc">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </div>
+            <div class="product__price">
+              <div class="price__row">
+                <div class="price__new">$125.00</div>
+                <div class="price__discount">50%</div>
+              </div>
+              <div class="price__old">$250.00</div>
+            </div>
+            <div class="product__action">
+              <div class="product__counter">
+                <div class="counter__control minus">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="counter__num">1</div>
+                <div class="counter__control plus">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="product__btn btn">
+                <i class="fa-solid fa-cart-shopping"></i> Add to cart
+              </div>
+            </div>
+          </div>
+          <div class="product__modal hidden">
+            <div class="modal__close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="modal__image">
+              <div class="image__big">
+                <div class="image__control back">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <img
+                  src="./images/image-product-1.jpg"
+                  alt=""
+                  class="modalBigImage"
+                />
+                <div class="image__control forward">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+              <div class="image__thumbnail modalThumbImages">
+                <div class="thumb__img">
+                  <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+                </div>
+                <div class="thumb__img">
+                  <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+                </div>
+                <div class="thumb__img">
+                  <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+                </div>
+                <div class="thumb__img">
+                  <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="overlay"></div>
+    <div class="light-overlay"></div>
+  </body>
+  <script type="module" src="./js/script.js"></script>
+</html>
