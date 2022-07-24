@@ -144,10 +144,17 @@ a {
 .portfolio h1 {
   text-align: center;
   margin-bottom: 15px;
+  color: #b5838d;
+  text-shadow: 2px 2px 2px #c3bbb6;
+  font-size: 38px;
+  margin-bottom: 30px;
 }
-.portfolio h2 {
-  color: #b22222;
+.portfolio__title {
   text-align: center;
+  background-color: #ffcdb2;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px auto;
 }
 
 .cards__container {
