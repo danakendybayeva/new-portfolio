@@ -150,6 +150,7 @@ a {
   margin-bottom: 30px;
 }
 .portfolio__title {
+  border-radius: 5px;
   text-align: center;
   background-color: #ffcdb2;
   padding: 10px;
